@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: start;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    
+}
+.text{
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.page{
+    width: 330px;
+    border: 5px;
+    padding-bottom: 15px;
+}
+.title{
+    padding: 5px 0;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-family: 'DM Serif Display', serif;
+font-family: 'Eczar', serif;
+}
+
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    outline: none;
+}
+form input:focus{
+    border: 1px solid rgba(0, 0, 0,0.7);
+    background: #efefef;
+}
+.ins{
+    width:69px;
+    height: 66px;
+    padding: 0.5rem;
+}
+input[type="email"],input[type="password"]{
+    padding-left: 10px;
+    position: relative;
+    height: 30px;
+    font-size: 17px;
+}
+input::placeholder{
+    font-weight: normal;
+    font-size: 17px;
+    transition: 0,9s ease;
+}
+input:focus::placeholder{
+    font-size: 12px;
+    transform: translateY(-8px);
+
+}
+
+form button{
+    border: none;
+    background: #043fff;
+    padding: 5px 0 ;
+    margin-top: 5px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+form button:active{
+    background: #2c58fe;
+    transform: scale(0.995);
+}
+form .option{
+    color: #5a5a5a;
+    padding-left: 9px;
+    font-size: 14px;
+    position: absolute;
+    right: 7px;
+    margin: 20px 0;
+    font-weight: bold;
+    position: relative;
+    width: 99%;
+}
+form .option::before{
+    position: absolute;
+    content: '';
+    width: 38%;
+    height: 2px;
+    background: #b6b6b6;
+    left: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+form .option:after{
+    position: absolute;
+    content: '';
+    width: 39%;
+    height: 2px;
+    background: #b6b6b6;
+    right:  1px;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.fblink{
+    margin-top: 15px;
+    width: 100%;
+    margin-top: 9px;
+}
+ 
+.fblink img{
+    font-size: 18px;
+    color: #021897;
+    margin-right: 5px;
+    position: relative;
+    top: 6px;
+}
+.fblink a,a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #021897;
+}
+
+.forget-id{
+    margin: 10px;
+}
+
+.forget-id a{
+    text-decoration: none;
+    color: #025fd2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page .singup {
+    position: relative;
+    border: 1px solid#2740bc;
+    border-radius: 24px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+
+.signup a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0008af;
+    font-weight: bold;
+}
+.face{
+    width: 30px;
+}
+  @media (min-width: 0) and (max-width: 450px) {
+    body {
+        background: aliceblue;
+        height: auto;
+        }
+    .page {
+        width: 98%; 
+        padding: 0 1px; 
+    }
+    .ins{
+        width: 60px;
+        height: 60px;
+    }
+    .container {
+        width: 100%;
+    }
+    .title {
+        font-size: 0px; 
+    }
+    form {
+        width: 97%; 
+        margin-top: 1px; 
+        font-size: 22px;
+    }
+    form input[type="email"]{
+        padding-left:2vh;
+        margin-top: 8px;
+        margin-left: 6px;
+        font-size:24px;
+        width: 92%; 
+        height: 46px; 
+        border-radius: 9px;
+    }
+    form input[type="password"] {
+        padding-left:2vh;
+        margin-top: 8px;
+        margin-left: 6px;
+        width: 92%; 
+        font-size: 22px;
+        height: 46px; 
+        border-radius: 9px;
+    }
+    input::placeholder{
+        font-weight: normal;
+        font-size: 22px;
+        font-size: 17px;
+        transition: 0,9s ease;
+    }
+    form button {
+        width: 99%;
+        margin-top: 20px; 
+        margin-left: 4px;
+        height: 40px;
+        font-size: 17px; 
+        border-radius: 15px;
+    }
+    .forget-id a, a{
+        text-decoration: none;
+        color: #025fd2;
+        font-size: 22px;
+        font-weight: 50;
+
+    }
+    .fblink {
+        margin-top: 1px; 
+    }
+    .fblink img {
+        font-size: 16px;
+    }
+    form .option{
+        text-align: center;
+        font-size: 19px;
+    }
+    .forget-id {
+        margin: 15px 0; 
+    }
+    .page .singup {
+        position: relative;
+        border: 2px solid #025fd2;
+        border-radius: 26px;
+        height: 59px;
+        width: 98%;
+        left: 51%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+    }
+}
+
